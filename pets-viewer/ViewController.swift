@@ -23,7 +23,6 @@ class ViewController: UITableViewController {
 
         var idx = 1
         for item in items {
-            print(idx)
             if item.hasPrefix("pic") {
                 pictures.append(["name": item.replacingOccurrences(of: ".webp", with: ""), "file": item, "pos": String(idx)])
                 idx += 1
